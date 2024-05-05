@@ -7,12 +7,12 @@ export const InitTheme: React.FC = () => {
     // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document
     <Script
       id="theme-script"
-      strategy="beforeInteractive"
+      // strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: `
   (function () {
     function getImplicitPreference() {
-      var mediaQuery = '(prefers-color-scheme: dark)'
+      var mediaQuery = '(prefers-color-scheme: light)'
       var mql = window.matchMedia(mediaQuery)
       var hasImplicitPreference = typeof mql.matches === 'boolean'
 
